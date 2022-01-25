@@ -1,0 +1,15 @@
+ALGORITHM check_point_4
+VARIABLE
+t : ARRAY_OF INTEGER[M];
+i,j,k : INTEGER
+
+BEGIN
+    for(i from 1 to M-1) do
+    k= t[i];
+    j=i-1;
+  while (j>=0 and t[j]>k) do
+    k=t[j];
+  END WHILE;
+
+END
+
